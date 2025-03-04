@@ -297,3 +297,15 @@ http://localhost:3000/realtimeproducts
 ![confirm-delete.png](resources/confirm-delete.png)
 ![product-deleted.png](resources/product-deleted.png)
 
+
+
+## Vistas Online
+La integración se deployo en fly.io en los siguientes directorios
+
+### Vista productos estándar
+
+https://api-express-handlerbars-socket-shooping-cart-1iwq2a.fly.dev
+
+### Vistas Productos Realtime
+
+https://api-express-handlerbars-socket-shooping-cart-1iwq2a.fly.dev/realtimeproducts
