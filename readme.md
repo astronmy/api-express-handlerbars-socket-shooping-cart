@@ -1,9 +1,11 @@
-# API Shooping Cart with NodeJs,Express,Router para la Gestión de un Carrito de Compras
+# API Shooping Cart with NodeJs,Express,Router,Handlebars y Socket para la Gestión de un Carrito de Compras. 
 
 Este proyecto es una API REST construida con Node.js para gestionar un carrito de compras.
 La API permite: 
 - Realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre un conjunto de productos.
 - Realizar operaciones CRU (Crear, Leer, Actualizar) sobre un carrito de compras.
+
+Incluye además vistas con handlebars y realtime views con sockets
 
 ## Descripción
 
@@ -278,3 +280,20 @@ Este endpoint permite obtener un carrito por su `id`.
 - **Método**: `PUT`
 - **URL**: `/carts/:cart_id/product/product_id`
 - **Cuerpo de la solicitud (JSON)**:
+
+
+## Vistas 
+### Listado de Productos
+http://localhost:3000/
+
+![products.png](resources/products.png)
+
+### Crud websockets y Handlebars
+http://localhost:3000/realtimeproducts
+
+#### Vista general
+![realtime-products.png](resources/realtime-products.png)
+#### Confirmar eliminación
+![confirm-delete.png](resources/confirm-delete.png)
+![product-deleted.png](resources/product-deleted.png)
+
