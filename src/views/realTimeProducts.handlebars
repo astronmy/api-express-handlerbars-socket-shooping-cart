@@ -1,0 +1,21 @@
+<h2>Real-Time Products</h2>
+
+<form id="product-form" class="product-form">
+    <input type="text" class="form-input" id="code" placeholder="Product Code" required>
+    <input type="text" class="form-input" id="title" placeholder="Product title" required>
+    <input type="text" class="form-input" id="description" placeholder="Description" required>
+    <input type="number" class="form-input" id="price" placeholder="Price" required>
+    <input type="number" class="form-input" id="stock" placeholder="Stock" required>
+    <input type="text" class="form-input" id="category" placeholder="Category" required>
+    <button type="button" onclick="addProduct()">Add Product</button>
+</form>
+
+<div class="product-list" id="products-container">
+    {{#each products}}
+        {{> product-card}}  
+    {{/each}}
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/websocket.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+

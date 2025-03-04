@@ -1,0 +1,1072 @@
+{
+	"info": {
+		"_postman_id": "0b75b232-a690-4a00-af7a-2d7a7cd464d3",
+		"name": "Shooping Cart API Express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18284984"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/products",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1193"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a9-2DgGTKV/FgqGhDSOICOB/CXaE0A\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:32:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"1\",\n            \"title\": \"Laptop Gamer\",\n            \"description\": \"Laptop de alto rendimiento para juegos, con procesador i7 y tarjeta gráfica RTX 3060.\",\n            \"code\": \"LAPTOP123\",\n            \"price\": 1500,\n            \"status\": true,\n            \"stock\": 25,\n            \"category\": \"Electrónica\",\n            \"thumbnails\": [\n                \"https://picsum.photos/300?random=1\",\n                \"https://picsum.photos/300?random=2\"\n            ]\n        },\n        {\n            \"id\": \"2\",\n            \"title\": \"Smartphone\",\n            \"description\": \"Teléfono inteligente con pantalla AMOLED y 128 GB de almacenamiento.\",\n            \"code\": \"PHONE456\",\n            \"price\": 600,\n            \"status\": true,\n            \"stock\": 50,\n            \"category\": \"Electrónica\",\n            \"thumbnails\": [\n                \"https://picsum.photos/300?random=3\",\n                \"https://picsum.photos/300?random=4\"\n            ]\n        },\n        {\n            \"id\": \"3\",\n            \"title\": \"Zapatillas deportivas\",\n            \"description\": \"Zapatillas cómodas y ligeras para correr.\",\n            \"code\": \"SHOES789\",\n            \"price\": 80,\n            \"status\": true,\n            \"stock\": 100,\n            \"category\": \"Ropa y calzado\",\n            \"thumbnails\": [\n                \"https://picsum.photos/300?random=5\",\n                \"https://picsum.photos/300?random=6\"\n            ]\n        },\n        {\n            \"id\": \"4\",\n            \"title\": \"Auriculares Bluetooth\",\n            \"description\": \"Auriculares inalámbricos con cancelación de ruido y batería de larga duración.\",\n            \"code\": \"HEADSET321\",\n            \"price\": 120,\n            \"status\": false,\n            \"stock\": 0,\n            \"category\": \"Accesorios\",\n            \"thumbnails\": [\n                \"https://picsum.photos/300?random=7\",\n                \"https://picsum.photos/300?random=8\"\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/:product_id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								":product_id"
+							],
+							"variable": [
+								{
+									"key": "product_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/products/:product_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										":product_id"
+									],
+									"variable": [
+										{
+											"key": "product_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "320"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"140-xpW9VQaeD9gbEOTdubuETZClVeM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:35:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"product\": {\n        \"id\": \"1\",\n        \"title\": \"Laptop Gamer\",\n        \"description\": \"Laptop de alto rendimiento para juegos, con procesador i7 y tarjeta gráfica RTX 3060.\",\n        \"code\": \"LAPTOP123\",\n        \"price\": 1500,\n        \"status\": true,\n        \"stock\": 25,\n        \"category\": \"Electrónica\",\n        \"thumbnails\": [\n            \"https://picsum.photos/300?random=1\",\n            \"https://picsum.photos/300?random=2\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/products/:product_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										":product_id"
+									],
+									"variable": [
+										{
+											"key": "product_id",
+											"value": "144"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-E4JGy/n5c7jctoD+n/Eo3yf4Wkk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:35:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Product not found.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Macbook Pro M4 Pro\",\n  \"description\": \"Apple device\",\n  \"code\": \"MACM411\",\n  \"price\": 1900,\n  \"category\": \"Electronics\",\n  \"thumbnails\": [\n    \"https://example.com/images/laptop1.jpg\",\n    \"https://example.com/images/laptop2.jpg\"\n  ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201 Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"Macbook Pro M4 Pro\",\n  \"description\": \"Apple device\",\n  \"code\": \"MACM411\",\n  \"price\": 1900,\n  \"status\": true,\n  \"stock\": 25,\n  \"category\": \"Electronics\",\n  \"thumbnails\": [\n    \"https://example.com/images/laptop1.jpg\",\n    \"https://example.com/images/laptop2.jpg\"\n  ]\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/products",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "283"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11b-Ms5aPuo0uZFNRlD7iE+/asH9N4A\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:37:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product created\",\n    \"product\": {\n        \"id\": 5,\n        \"title\": \"Macbook Pro M4 Pro\",\n        \"description\": \"Apple device\",\n        \"code\": \"MACM411\",\n        \"price\": 1900,\n        \"status\": true,\n        \"stock\": 25,\n        \"category\": \"Electronics\",\n        \"thumbnails\": [\n            \"https://example.com/images/laptop1.jpg\",\n            \"https://example.com/images/laptop2.jpg\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"Macbook Pro M4 Pro\",\n  \"description\": \"Apple device\",\n  \"code\": \"MACM411\",\n  \"price\": 1900,\n  \"category\": \"Electronics\",\n  \"thumbnails\": [\n    \"https://example.com/images/laptop1.jpg\",\n    \"https://example.com/images/laptop2.jpg\"\n  ]\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/products",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "88"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"58-Q9azdaDHAGtLMzKxMMK5d3Vy01s\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:38:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"All fields: title, description, code, price, stock and category are required\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"price\": 1900\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/products/:product_id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								":product_id"
+							],
+							"variable": [
+								{
+									"key": "product_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"price\": 1850\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/products/:product_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										":product_id"
+									],
+									"variable": [
+										{
+											"key": "product_id",
+											"value": "500"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-E4JGy/n5c7jctoD+n/Eo3yf4Wkk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:40:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Product not found.\"\n}"
+						},
+						{
+							"name": "204 Updated",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"price\": 1900\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/products/:product_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										":product_id"
+									],
+									"variable": [
+										{
+											"key": "product_id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:46:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/:product_id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								":product_id"
+							],
+							"variable": [
+								{
+									"key": "product_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "404 Not found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/products/:product_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										":product_id"
+									],
+									"variable": [
+										{
+											"key": "product_id",
+											"value": "50"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-E4JGy/n5c7jctoD+n/Eo3yf4Wkk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:41:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Product not found.\"\n}"
+						},
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/products/:product_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										":product_id"
+									],
+									"variable": [
+										{
+											"key": "product_id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "285"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11d-VVIRXB23prj6G4MhbRgThYD5050\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:43:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product deleted\",\n    \"product\": [\n        {\n            \"id\": 5,\n            \"title\": \"Macbook Pro M4 Pro\",\n            \"description\": \"Apple device\",\n            \"code\": \"MACM411\",\n            \"price\": 1850,\n            \"status\": true,\n            \"stock\": 25,\n            \"category\": \"Electronics\",\n            \"thumbnails\": [\n                \"https://example.com/images/laptop1.jpg\",\n                \"https://example.com/images/laptop2.jpg\"\n            ]\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Get Cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/carts/:cart_id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carts",
+								":cart_id"
+							],
+							"variable": [
+								{
+									"key": "cart_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/carts/:cart_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"carts",
+										":cart_id"
+									],
+									"variable": [
+										{
+											"key": "cart_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "68"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44-wD4IWc9ZLstcOSZyoq+3fTbsjKU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:50:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"product\": 101,\n            \"quantity\": 2\n        },\n        {\n            \"product\": 202,\n            \"quantity\": 1\n        }\n    ]\n}"
+						},
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/carts/:cart_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"carts",
+										":cart_id"
+									],
+									"variable": [
+										{
+											"key": "cart_id",
+											"value": "5000"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b-DWgaCOsN5FTQ7bt1QiHfOeeEtLQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:50:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Cart not found.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/carts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201 Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/carts",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"carts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f-Si++apSoOulw3PSSSpIQf7b0yGg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:52:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Cart created\",\n    \"id\": 2,\n    \"products\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/carts/:cart_id/product/:product_id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carts",
+								":cart_id",
+								"product",
+								":product_id"
+							],
+							"variable": [
+								{
+									"key": "cart_id",
+									"value": "1"
+								},
+								{
+									"key": "product_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/carts/:cart_id/product/:product_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"carts",
+										":cart_id",
+										"product",
+										":product_id"
+									],
+									"variable": [
+										{
+											"key": "cart_id",
+											"value": "1"
+										},
+										{
+											"key": "product_id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "151"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"97-t13GvLzuXrxOevbywhYA5TwxUv8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:55:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product added to cart\",\n    \"cart\": {\n        \"id\": 1,\n        \"products\": [\n            {\n                \"product\": 101,\n                \"quantity\": 2\n            },\n            {\n                \"product\": 202,\n                \"quantity\": 1\n            },\n            {\n                \"product\": \"5\",\n                \"quantity\": 1\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/carts/:cart_id/product/:product_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"carts",
+										":cart_id",
+										"product",
+										":product_id"
+									],
+									"variable": [
+										{
+											"key": "cart_id",
+											"value": "1000"
+										},
+										{
+											"key": "product_id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b-DWgaCOsN5FTQ7bt1QiHfOeeEtLQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 23:58:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Cart not found.\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080/api/v1",
+			"type": "string"
+		}
+	]
+}

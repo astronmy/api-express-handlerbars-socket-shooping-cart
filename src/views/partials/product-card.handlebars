@@ -1,0 +1,14 @@
+<div class="product">
+    <h3>{{title}}</h3>
+    <p style="display: none;"><strong>Code:</strong> {{id}}</p>
+    <p><strong>Description:</strong> {{description}}</p>
+    <p><strong>Price:</strong> ${{price}}</p>
+    <p><strong>Category:</strong> {{category}}</p>
+    <p><strong>Stock:</strong> {{#if status}} {{stock}} stock {{else}} <span class="out-of-stock">out of stock</span> {{/if}}</p>
+    
+    <div class="thumbnails">
+        {{#each thumbnails}}
+            <img src="{{this}}" alt="Image of {{../title}}">
+        {{/each}}
+    </div>
+</div>

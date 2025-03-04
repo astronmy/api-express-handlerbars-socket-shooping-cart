@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop Gamer",
+    "description": "Laptop de alto rendimiento para juegos, con procesador i7 y tarjeta gráfica RTX 3060.",
+    "code": "LAPTOP123",
+    "price": 1500,
+    "status": true,
+    "stock": 25,
+    "category": "Electrónica",
+    "thumbnails": [
+      "https://picsum.photos/300?random=1"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente con pantalla AMOLED y 128 GB de almacenamiento.",
+    "code": "PHONE456",
+    "price": 600,
+    "status": true,
+    "stock": 50,
+    "category": "Electrónica",
+    "thumbnails": [
+      "https://picsum.photos/300?random=3"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Auriculares Bluetooth",
+    "description": "Auriculares inalámbricos con cancelación de ruido y batería de larga duración.",
+    "code": "HEADSET321",
+    "price": 120,
+    "status": false,
+    "stock": 0,
+    "category": "Accesorios",
+    "thumbnails": [
+      "https://picsum.photos/300?random=7"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Macbook Pro M4 Pro",
+    "description": "Apple device",
+    "code": "MACM411",
+    "price": 1900,
+    "status": true,
+    "stock": 25,
+    "category": "Electronics",
+    "thumbnails": [
+      "https://picsum.photos/300?random=17"
+    ]
+  }
+]
